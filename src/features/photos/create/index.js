@@ -35,6 +35,7 @@ export default function CreatePhoto() {
           value={formData.imageUrl}
         />
       </div>
+      
       <div>
         <label htmlFor="caption">Enter your image's caption: </label>
         <input
@@ -45,6 +46,7 @@ export default function CreatePhoto() {
           type="text"
           value={formData.caption}
         />
+
       </div>
       <input type="submit" />
     </form>

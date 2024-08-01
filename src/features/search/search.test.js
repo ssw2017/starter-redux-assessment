@@ -23,6 +23,7 @@ test('displays the dogs that match the user-provided search term', async () => {
     screen.getByRole('searchbox', { name: /Search by caption:/i }),
     'terrier'
   );
+  
 
   filtered.forEach((photo) =>
     expect(screen.getByText(photo.caption)).toBeInTheDocument()
